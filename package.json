@@ -16,9 +16,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:ssr": "node dist/server.js",
     "build": "npm run build:client && npm run build:server",
     "build:client": "react-scripts build",
-    "build:server": "webpack --config webpack.config.js",
+    "build:server": "webpack --config webpack.server.js",
     "start:server": "node dist/server.js",
     "start:dev": "webpack --watch --mode development & nodemon dist/server.js",
     "test": "react-scripts test",
